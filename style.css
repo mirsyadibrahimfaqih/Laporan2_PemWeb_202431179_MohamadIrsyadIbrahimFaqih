@@ -1,0 +1,166 @@
+:root {
+    --primary: #0077b6;
+    --secondary: #90e0ef;
+    --bg: #f8f9fa;
+    --text: #212529;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    flex: 1 1 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+h3::after {
+    content: "▼";
+    font-size: 0.9em;
+    margin-left: 10px;
+    color: var(--secondary);
+    transition: transform 0.3s;
+}
+
+h3:hover::after {
+    transform: rotate(180deg);
+}
+
+p {
+    background-color: #f1f9ff;
+    border-left: 5px solid var(--primary);
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-rapi {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+}
+
+.btn-berantakan {
+    background: linear-gradient(135deg, red, yellow);
+    color: black;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+@media (max-width: 1023px) and (min-width: 600px) {
+    header {
+        padding: 30px 10px;
+    }
+    .card {
+        flex: 1 1 90%;
+    }
+}
+
+@media (max-width: 599px) {
+    h1 { font-size: 1.6em; }
+    h2 { font-size: 1em; }
+    p { font-size: 16px; }
+    button {
+        width: 100%;
+    }
+}
+
+.messy {
+    background-color: #ff00ff !important;
+    color: #000 !important;
+    font-family: "Comic Sans MS", cursive;
+}
+
+.messy header {
+    background: repeating-linear-gradient(
+        45deg,
+        yellow,
+        yellow 10px,
+        red 10px,
+        red 20px
+    );
+    color: black;
+}
+
+.messy .card {
+    background-color: lime;
+    transform: rotate(-2deg);
+    color: blue;
+}
+
+.messy h3 {
+    color: red;
+}
+
+.messy button {
+    background: linear-gradient(90deg, red, yellow, green);
+    color: black;
+    border: 2px dashed black;
+}
