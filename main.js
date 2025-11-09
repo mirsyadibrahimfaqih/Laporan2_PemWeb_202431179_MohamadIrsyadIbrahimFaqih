@@ -1,17 +1,15 @@
 function toggleContent(element) {
-    const nextP = element.nextElementSibling;
-    const confirmHide = confirm("Apakah ingin menyembunyikan konten ini?");
+    const answer = element.querySelector('.answer');
+    const confirmHide = confirm('Apakah konten ingin disembunyikan?');
     if (confirmHide) {
-        nextP.style.display = "none";
-    } else {
-        nextP.style.display = "block";
+        answer.style.display = (answer.style.display === 'none') ? 'block' : 'none';
     }
 }
 
 function setMode(mode) {
-    if (mode === "rapi") {
-        document.body.classList.remove("messy");
-    } else if (mode === "berantakan") {
-        document.body.classList.add("messy");
+    if (mode === 'rapi') {
+        document.body.classList.remove('berantakan');
+    } else if (mode === 'berantakan') {
+        document.body.classList.add('berantakan');
     }
 }
