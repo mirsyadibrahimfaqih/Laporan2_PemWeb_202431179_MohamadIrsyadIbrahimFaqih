@@ -12,23 +12,37 @@
         <h2>Mohamad Irsyad Ibrahim Faqih | 202431179</h2>
     </header>
 
-    <div class="container">
-        <div class="card">
-            <h3 onclick="toggleContent(this)">A. Mengapa menggunakan CSS dan JavaScript dalam pemrograman web modern?</h3>
-            <p>CSS digunakan untuk mengatur tampilan halaman agar konsisten, menarik, dan mudah dibaca. JavaScript memberikan interaktivitas pada web seperti animasi, tombol dinamis, dan validasi. Kombinasi keduanya menciptakan web yang modern dan responsif.</p>
-
-            <h3 onclick="toggleContent(this)">B. Jelaskan konsep dan tujuan utama dari Responsive Web Design (RWD)!</h3>
-            <p>Responsive Web Design (RWD) adalah teknik desain agar website menyesuaikan tampilannya dengan ukuran layar perangkat. Tujuannya membuat pengguna nyaman membaca dan berinteraksi di berbagai perangkat, tanpa perlu zoom atau scroll berlebihan.</p>
-
-            <h3 onclick="toggleContent(this)">C. Bagaimana kombinasi CSS, JavaScript, dan prinsip RWD dapat menghasilkan tampilan web yang interaktif sekaligus adaptif?</h3>
-            <p>CSS membuat tampilan rapi, RWD menjadikannya fleksibel di semua ukuran layar, sedangkan JavaScript menambah efek interaktif. Ketiganya saling melengkapi untuk menciptakan pengalaman pengguna yang dinamis dan menarik.</p>
-
-            <div class="button-container">
-                <button class="btn-rapi" onclick="setMode('rapi')">Mode Rapi</button>
-                <button class="btn-berantakan" onclick="setMode('berantakan')">Mode Berantakan</button>
-            </div>
-        </div>
+    <div class="button-container">
+        <button class="btn-rapi" onclick="setMode('rapi')">Mode Rapi</button>
+        <button class="btn-berantakan" onclick="setMode('berantakan')">Mode Berantakan</button>
     </div>
+
+    <main class="container">
+        <h3 onclick="toggleContent(this)">
+            A. Mengapa menggunakan CSS dan JavaScript dalam pemrograman web modern?<br><br>
+            <span class="answer">
+                CSS digunakan untuk mengatur tampilan halaman agar konsisten, menarik, dan mudah dibaca.
+                JavaScript memberikan interaktivitas pada web seperti animasi, tombol dinamis, dan validasi.
+                Kombinasi keduanya menciptakan web yang modern dan responsif.
+            </span>
+        </h3>
+
+        <h3 onclick="toggleContent(this)">
+            B. Jelaskan konsep dan tujuan utama dari Responsive Web Design (RWD)!<br><br>
+            <span class="answer">
+                Responsive Web Design (RWD) adalah teknik desain agar website menyesuaikan tampilannya dengan ukuran layar perangkat.
+                Tujuannya membuat pengguna nyaman membaca dan berinteraksi di berbagai perangkat tanpa perlu zoom atau scroll berlebihan.
+            </span>
+        </h3>
+
+        <h3 onclick="toggleContent(this)">
+            C. Bagaimana kombinasi CSS, JavaScript, dan prinsip RWD dapat menghasilkan tampilan web yang interaktif sekaligus adaptif?<br><br>
+            <span class="answer">
+                CSS membuat tampilan rapi, RWD menjadikannya fleksibel di semua ukuran layar, sedangkan JavaScript menambah efek interaktif.
+                Ketiganya saling melengkapi untuk menciptakan pengalaman pengguna yang dinamis dan menarik.
+            </span>
+        </h3>
+    </main>
 
     <script src="main.js"></script>
 </body>
